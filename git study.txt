@@ -15,3 +15,7 @@ git 的命令：
 2. git init 这个目录变成Git可以管理的仓库
 
 3. git add <file>  添加指定文件到仓库， git add . 添加所有文件到仓库
+
+4. git commit -m "decration"           告诉Git，把文件提交到仓库
+
+5. git status  命令可以让我们时刻掌握仓库当前的状态， modified <file>: 表示有文件被修改了，还没有准备提交
