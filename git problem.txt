@@ -1,0 +1,2 @@
+学习git所遇到的问题：
+Updates were rejected because the remote contains work that you do
