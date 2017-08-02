@@ -27,3 +27,17 @@ git 的命令：
 8. git reset --hart HEAD^ 返回上一个版本
 
 9. git reset --hard commitId  返回指定版本
+
+10. git checkout -- readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况
+
+一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+
+其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。。
+
+11. rm <file>  删除文件，Git知道你删除了文件，因此，工作区和版本库就不一致了，git status命令会立刻告诉你哪些文件被删除了，现在你有两个选择，一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit：
+
+12. git remote add origin url  添加远程节点
+
+13 git push -u origin master  把本地master分支的最新修改推送至GitHub，现在，你就拥有了真正的分布式版本库,第一次因为远程仓库是空的，所以添加-u，后面添加就不需要了

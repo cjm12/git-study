@@ -1,2 +1,3 @@
 学习git所遇到的问题：
-Updates were rejected because the remote contains work that you do
+1.Fatal: remote origin already exists，意思是远程节点已经存在
+1.解决方案：删除远程节点，然后添加。  删除命令：git remote rm origin
