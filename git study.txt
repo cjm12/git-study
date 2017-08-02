@@ -59,5 +59,8 @@ git 的命令：
 19. git merge --no-ff -m "merge with no-ff" dev  合并dev分支，并且禁用Fast forward，和创建一个新的commit，所以加上-m参数，把commit描述写进去
 
 20. git stash      可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+<<<<<<< Updated upstream
 
 21. git stash list  查看git stash保存的的位置在哪里：
+=======
+>>>>>>> Stashed changes
