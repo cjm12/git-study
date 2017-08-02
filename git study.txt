@@ -6,6 +6,10 @@ git有工作区和版本库之分，版本库里面又有暂存区之分
 
 3. 从自己电脑上传文件到github,要先上传到暂存区，在推送到github上面
 
+4. git里分支的作用：分支在实际中有什么用呢？假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了50%的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人不能干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。
+
+现在有了分支，就不用怕了。你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。
+
 
 
 git 的命令：
@@ -41,3 +45,19 @@ git 的命令：
 12. git remote add origin url  添加远程节点
 
 13 git push -u origin master  把本地master分支的最新修改推送至GitHub，现在，你就拥有了真正的分布式版本库,第一次因为远程仓库是空的，所以添加-u，后面添加就不需要了
+
+14 git checkout -b dev  创建dev分支，然后切换到dev分支， 前面的命令等于git branch dev +  git checkout dev
+
+15. git branch    查看当前的分支
+
+16. git merge       命令用于合并指定分支到当前分支
+
+17. git branch -d  name  删除分支
+
+18. git log --graph命令可以看到分支合并图。
+
+19. git merge --no-ff -m "merge with no-ff" dev  合并dev分支，并且禁用Fast forward，和创建一个新的commit，所以加上-m参数，把commit描述写进去
+
+20. git stash      可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+
+21. git stash list  查看git stash保存的的位置在哪里：
