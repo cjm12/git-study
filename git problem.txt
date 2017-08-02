@@ -1,3 +1,5 @@
 学习git所遇到的问题：
 1.Fatal: remote origin already exists，意思是远程节点已经存在
 1.解决方案：删除远程节点，然后添加。  删除命令：git remote rm origin
+
+2.添加远程仓库的时候出现问题，为什么文件夹没有添加进去
