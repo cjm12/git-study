@@ -19,3 +19,11 @@ git 的命令：
 4. git commit -m "decration"           告诉Git，把文件提交到仓库
 
 5. git status  命令可以让我们时刻掌握仓库当前的状态， modified <file>: 表示有文件被修改了，还没有准备提交
+
+6. git diff 顾名思义就是查看difference，显示的格式正是Unix通用的diff格式
+
+7. git log    显示从最近到最远的提交日志，返回的数据有commit的ID
+
+8. git reset --hart HEAD^ 返回上一个版本
+
+9. git reset --hard commitId  返回指定版本
